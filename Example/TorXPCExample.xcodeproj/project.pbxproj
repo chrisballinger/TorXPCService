@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9963B581E3E950400373CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9963B571E3E950400373CB0 /* AppDelegate.swift */; };
+		D9963B5A1E3E950400373CB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9963B591E3E950400373CB0 /* ViewController.swift */; };
+		D9963B5C1E3E950400373CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9963B5B1E3E950400373CB0 /* Assets.xcassets */; };
+		D9963B5F1E3E950400373CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9963B5D1E3E950400373CB0 /* Main.storyboard */; };
+		D99EC22C1E468A8F008A51F7 /* TorXPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = D986AE921E3EB1E600647DDC /* TorXPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D99EC2691E468E04008A51F7 /* TorXPCInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EC25B1E468D6F008A51F7 /* TorXPCInterface.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D986AE911E3EB1E600647DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D986AE8C1E3EB1E600647DDC /* TorXPCService.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9963B3C1E3E937800373CB0;
+			remoteInfo = TorXPCService;
+		};
+		D99EC22D1E468A8F008A51F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D986AE8C1E3EB1E600647DDC /* TorXPCService.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D9963B3B1E3E937800373CB0;
+			remoteInfo = TorXPCService;
+		};
+		D99EC25A1E468D6F008A51F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D986AE8C1E3EB1E600647DDC /* TorXPCService.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D99EC2431E468C8D008A51F7;
+			remoteInfo = TorXPCInterface;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D99EC22F1E468A8F008A51F7 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				D99EC22C1E468A8F008A51F7 /* TorXPCService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D986AE8C1E3EB1E600647DDC /* TorXPCService.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TorXPCService.xcodeproj; path = ../TorXPCService.xcodeproj; sourceTree = "<group>"; };
+		D9963B541E3E950400373CB0 /* TorXPCExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorXPCExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9963B571E3E950400373CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9963B591E3E950400373CB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9963B5B1E3E950400373CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9963B5E1E3E950400373CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9963B601E3E950400373CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99EC2301E468AAA008A51F7 /* TorXPCExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TorXPCExample.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9963B511E3E950400373CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D99EC2691E468E04008A51F7 /* TorXPCInterface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D986AE8D1E3EB1E600647DDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D986AE921E3EB1E600647DDC /* TorXPCService.xpc */,
+				D99EC25B1E468D6F008A51F7 /* TorXPCInterface.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9963B4B1E3E950400373CB0 = {
+			isa = PBXGroup;
+			children = (
+				D9963B561E3E950400373CB0 /* TorXPCExample */,
+				D9963B551E3E950400373CB0 /* Products */,
+				D986AE8C1E3EB1E600647DDC /* TorXPCService.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		D9963B551E3E950400373CB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9963B541E3E950400373CB0 /* TorXPCExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9963B561E3E950400373CB0 /* TorXPCExample */ = {
+			isa = PBXGroup;
+			children = (
+				D99EC2301E468AAA008A51F7 /* TorXPCExample.entitlements */,
+				D9963B571E3E950400373CB0 /* AppDelegate.swift */,
+				D9963B591E3E950400373CB0 /* ViewController.swift */,
+				D9963B5B1E3E950400373CB0 /* Assets.xcassets */,
+				D9963B5D1E3E950400373CB0 /* Main.storyboard */,
+				D9963B601E3E950400373CB0 /* Info.plist */,
+			);
+			path = TorXPCExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9963B531E3E950400373CB0 /* TorXPCExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9963B631E3E950400373CB0 /* Build configuration list for PBXNativeTarget "TorXPCExample" */;
+			buildPhases = (
+				D9963B501E3E950400373CB0 /* Sources */,
+				D9963B511E3E950400373CB0 /* Frameworks */,
+				D9963B521E3E950400373CB0 /* Resources */,
+				D99EC22F1E468A8F008A51F7 /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D99EC22E1E468A8F008A51F7 /* PBXTargetDependency */,
+			);
+			name = TorXPCExample;
+			productName = TorXPCExample;
+			productReference = D9963B541E3E950400373CB0 /* TorXPCExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9963B4C1E3E950400373CB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ChatSecure;
+				TargetAttributes = {
+					D9963B531E3E950400373CB0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D9963B4F1E3E950400373CB0 /* Build configuration list for PBXProject "TorXPCExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9963B4B1E3E950400373CB0;
+			productRefGroup = D9963B551E3E950400373CB0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D986AE8D1E3EB1E600647DDC /* Products */;
+					ProjectRef = D986AE8C1E3EB1E600647DDC /* TorXPCService.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D9963B531E3E950400373CB0 /* TorXPCExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D986AE921E3EB1E600647DDC /* TorXPCService.xpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.xpc-service";
+			path = TorXPCService.xpc;
+			remoteRef = D986AE911E3EB1E600647DDC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D99EC25B1E468D6F008A51F7 /* TorXPCInterface.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TorXPCInterface.framework;
+			remoteRef = D99EC25A1E468D6F008A51F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9963B521E3E950400373CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9963B5C1E3E950400373CB0 /* Assets.xcassets in Resources */,
+				D9963B5F1E3E950400373CB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9963B501E3E950400373CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9963B5A1E3E950400373CB0 /* ViewController.swift in Sources */,
+				D9963B581E3E950400373CB0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D99EC22E1E468A8F008A51F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TorXPCService;
+			targetProxy = D99EC22D1E468A8F008A51F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9963B5D1E3E950400373CB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9963B5E1E3E950400373CB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9963B611E3E950400373CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9963B621E3E950400373CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D9963B641E3E950400373CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TorXPCExample/TorXPCExample.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TorXPCExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.chatsecure.TorXPCExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D9963B651E3E950400373CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TorXPCExample/TorXPCExample.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TorXPCExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.chatsecure.TorXPCExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9963B4F1E3E950400373CB0 /* Build configuration list for PBXProject "TorXPCExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9963B611E3E950400373CB0 /* Debug */,
+				D9963B621E3E950400373CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9963B631E3E950400373CB0 /* Build configuration list for PBXNativeTarget "TorXPCExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9963B641E3E950400373CB0 /* Debug */,
+				D9963B651E3E950400373CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9963B4C1E3E950400373CB0 /* Project object */;
+}

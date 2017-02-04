@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3832BD0367ACCC9DAE6383E173BF008E7D9F59C3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "04DE5C91D5E37A88E2E3F3E318C6C6A444732C18" : 9223372036854775807,
+    "3832BD0367ACCC9DAE6383E173BF008E7D9F59C3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7CE9D74E-9766-4FF2-BA93-8E3E52B2A1FC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "04DE5C91D5E37A88E2E3F3E318C6C6A444732C18" : "TorXPCService\/Submodules\/Tor-framework\/",
+    "3832BD0367ACCC9DAE6383E173BF008E7D9F59C3" : "TorXPCService\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TorXPCExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/TorXPCExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:iCepa\/Tor.framework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "04DE5C91D5E37A88E2E3F3E318C6C6A444732C18"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:chrisballinger\/TorXPCService.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3832BD0367ACCC9DAE6383E173BF008E7D9F59C3"
+    }
+  ]
+}
