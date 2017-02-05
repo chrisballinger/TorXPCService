@@ -7,10 +7,12 @@
 //
 
 import Cocoa
+import TorXPCInterface
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    let tor = TorXPCServiceManager()
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {

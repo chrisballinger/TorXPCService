@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D986AE891E3EB1A300647DDC /* Tor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D986AE821E3EB18D00647DDC /* Tor.framework */; };
+		D98A03FF1E47E23700068D52 /* TorXPCServiceListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D98A03FE1E47E23700068D52 /* TorXPCServiceListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9963B421E3E937800373CB0 /* TorXPCService.m in Sources */ = {isa = PBXBuildFile; fileRef = D9963B411E3E937800373CB0 /* TorXPCService.m */; };
 		D9963B441E3E937800373CB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9963B431E3E937800373CB0 /* main.m */; };
 		D99EC2471E468C8D008A51F7 /* TorXPCInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = D99EC2451E468C8D008A51F7 /* TorXPCInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D99EC2561E468CBA008A51F7 /* TorXPCServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D9963B3F1E3E937800373CB0 /* TorXPCServiceProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D99EC25D1E468DBE008A51F7 /* TorXPCInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99EC2431E468C8D008A51F7 /* TorXPCInterface.framework */; };
+		D99EC26C1E469CEF008A51F7 /* TorXPCServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D99EC26A1E469CEF008A51F7 /* TorXPCServiceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D99EC26D1E469CEF008A51F7 /* TorXPCServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D99EC26B1E469CEF008A51F7 /* TorXPCServiceManager.m */; };
+		D99EC2701E46A125008A51F7 /* TorOnionService.m in Sources */ = {isa = PBXBuildFile; fileRef = D99EC26F1E46A125008A51F7 /* TorOnionService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		D986AE701E3EB18C00647DDC /* Tor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tor.xcodeproj; path = "Submodules/Tor-framework/Tor.xcodeproj"; sourceTree = "<group>"; };
+		D98A03FE1E47E23700068D52 /* TorXPCServiceListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorXPCServiceListener.h; sourceTree = "<group>"; };
 		D9963B3C1E3E937800373CB0 /* TorXPCService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = TorXPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9963B3F1E3E937800373CB0 /* TorXPCServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TorXPCServiceProtocol.h; path = ../TorXPCService/TorXPCServiceProtocol.h; sourceTree = "<group>"; };
 		D9963B401E3E937800373CB0 /* TorXPCService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorXPCService.h; sourceTree = "<group>"; };
@@ -72,6 +77,10 @@
 		D99EC2431E468C8D008A51F7 /* TorXPCInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TorXPCInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99EC2451E468C8D008A51F7 /* TorXPCInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorXPCInterface.h; sourceTree = "<group>"; };
 		D99EC2461E468C8D008A51F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D99EC26A1E469CEF008A51F7 /* TorXPCServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorXPCServiceManager.h; sourceTree = "<group>"; };
+		D99EC26B1E469CEF008A51F7 /* TorXPCServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorXPCServiceManager.m; sourceTree = "<group>"; };
+		D99EC26E1E46A125008A51F7 /* TorOnionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorOnionService.h; sourceTree = "<group>"; };
+		D99EC26F1E46A125008A51F7 /* TorOnionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TorOnionService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				D99EC2311E468AC0008A51F7 /* TorXPCService.entitlements */,
+				D99EC26E1E46A125008A51F7 /* TorOnionService.h */,
+				D99EC26F1E46A125008A51F7 /* TorOnionService.m */,
 				D9963B401E3E937800373CB0 /* TorXPCService.h */,
 				D9963B411E3E937800373CB0 /* TorXPCService.m */,
 				D9963B431E3E937800373CB0 /* main.m */,
@@ -140,7 +151,10 @@
 		D99EC2441E468C8D008A51F7 /* TorXPCInterface */ = {
 			isa = PBXGroup;
 			children = (
+				D99EC26A1E469CEF008A51F7 /* TorXPCServiceManager.h */,
+				D99EC26B1E469CEF008A51F7 /* TorXPCServiceManager.m */,
 				D9963B3F1E3E937800373CB0 /* TorXPCServiceProtocol.h */,
+				D98A03FE1E47E23700068D52 /* TorXPCServiceListener.h */,
 				D99EC2451E468C8D008A51F7 /* TorXPCInterface.h */,
 				D99EC2461E468C8D008A51F7 /* Info.plist */,
 			);
@@ -154,7 +168,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98A03FF1E47E23700068D52 /* TorXPCServiceListener.h in Headers */,
 				D99EC2561E468CBA008A51F7 /* TorXPCServiceProtocol.h in Headers */,
+				D99EC26C1E469CEF008A51F7 /* TorXPCServiceManager.h in Headers */,
 				D99EC2471E468C8D008A51F7 /* TorXPCInterface.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +225,7 @@
 				TargetAttributes = {
 					D9963B3B1E3E937800373CB0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4T8JLQR6GR;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -307,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9963B441E3E937800373CB0 /* main.m in Sources */,
+				D99EC2701E46A125008A51F7 /* TorOnionService.m in Sources */,
 				D9963B421E3E937800373CB0 /* TorXPCService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99EC26D1E469CEF008A51F7 /* TorXPCServiceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +439,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TorXPCService/TorXPCService.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4T8JLQR6GR;
 				INFOPLIST_FILE = TorXPCService/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = org.chatsecure.TorXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,7 +453,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = TorXPCService/TorXPCService.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4T8JLQR6GR;
 				INFOPLIST_FILE = TorXPCService/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = org.chatsecure.TorXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,29 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
-// The protocol that this service will vend as its API. This header file will also need to be visible to the process hosting the service.
-@protocol TorXPCServiceProtocol
+typedef NS_ENUM(NSUInteger, TorXPCServiceStatus) {
+    TorXPCServiceStatusStopped,
+    TorXPCServiceStatusStarting,
+    TorXPCServiceStatusReady,
+    TorXPCServiceStatusShutdown,
+    TorXPCServiceStatusError
+};
 
-// Replace the API of this protocol with an API appropriate to the service you are vending.
-- (void)upperCaseString:(NSString *)aString withReply:(void (^)(NSString *))reply;
-    
+@protocol TorXPCServiceProtocol <NSObject>
+@required
+
+- (void) getStatus:(void(^ _Nonnull )(TorXPCServiceStatus status, NSError * _Nullable lastError))statusBlock;
+
+/** For setting up hidden services. */
+- (void)setupWithInternalPort:(in_port_t)internalPort
+                 externalPort:(in_port_t)externalPort
+         serviceDirectoryName:(NSString * _Nonnull)serviceDirectoryName;
+
+/** This will terminate the process */
+- (void)teardown;
+   
 @end
-
-/*
- To use the service from an application or other process, use NSXPCConnection to establish a connection to the service by doing something like this:
-
-     _connectionToService = [[NSXPCConnection alloc] initWithServiceName:@"org.chatsecure.TorXPCService"];
-     _connectionToService.remoteObjectInterface = [NSXPCInterface interfaceWithProtocol:@protocol(TorXPCServiceProtocol)];
-     [_connectionToService resume];
-
-Once you have a connection to the service, you can use it like this:
-
-     [[_connectionToService remoteObjectProxy] upperCaseString:@"hello" withReply:^(NSString *aString) {
-         // We have received a response. Update our text field, but do it on the main thread.
-         NSLog(@"Result string was: %@", aString);
-     }];
-
- And, when you are finished with the service, clean up the connection like this:
-
-     [_connectionToService invalidate];
-*/
